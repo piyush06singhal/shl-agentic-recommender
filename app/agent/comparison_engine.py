@@ -27,18 +27,32 @@ class ComparisonEngine:
         # Parse candidate values safely
         records: list[dict[str, Any]] = []
         for c in assessments:
-            record = {
-                "name": getattr(c, "name", None) or c.get("name", "Unknown Assessment"),
-                "type": getattr(c, "test_type", None) or c.get("test_type", "Not Available"),
-                "purpose": getattr(c, "description", None) or c.get("description", "Not Available"),
-                "job_family": getattr(c, "job_family", None) or c.get("job_family", []),
-                "levels": getattr(c, "target_level", None) or c.get("target_level", []),
-                "duration": getattr(c, "duration_mins", None) or c.get("duration_mins", 0),
-                "skills": getattr(c, "skills", None) or c.get("skills", []),
-                "languages": getattr(c, "languages", None) or c.get("languages", []),
-                "competencies": getattr(c, "competencies", None) or c.get("competencies", []),
-                "adaptive": getattr(c, "adaptive", None) or c.get("adaptive", False),
-            }
+            if isinstance(c, dict):
+                record = {
+                    "name": c.get("name") or "Unknown Assessment",
+                    "type": c.get("test_type") or "Not Available",
+                    "purpose": c.get("description") or "Not Available",
+                    "job_family": c.get("job_family") or [],
+                    "levels": c.get("target_level") or [],
+                    "duration": c.get("duration_mins") or 0,
+                    "skills": c.get("skills") or [],
+                    "languages": c.get("languages") or [],
+                    "competencies": c.get("competencies") or [],
+                    "adaptive": c.get("adaptive") or False,
+                }
+            else:
+                record = {
+                    "name": getattr(c, "name", None) or "Unknown Assessment",
+                    "type": getattr(c, "test_type", None) or "Not Available",
+                    "purpose": getattr(c, "description", None) or "Not Available",
+                    "job_family": getattr(c, "job_family", None) or [],
+                    "levels": getattr(c, "target_level", None) or [],
+                    "duration": getattr(c, "duration_mins", None) or 0,
+                    "skills": getattr(c, "skills", None) or [],
+                    "languages": getattr(c, "languages", None) or [],
+                    "competencies": getattr(c, "competencies", None) or [],
+                    "adaptive": getattr(c, "adaptive", None) or False,
+                }
             records.append(record)
 
         lines = ["Here is a side-by-side comparison of the requested assessments:\n"]
