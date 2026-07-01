@@ -1,11 +1,9 @@
 services:
   - type: web
     name: shl-recommender
-    env: docker
+    runtime: docker
     dockerfilePath: Dockerfile
     dockerContext: .
-    plan: starter
-    startCommand: python scripts/run.py
     envVars:
       - key: PORT
         value: 8000
