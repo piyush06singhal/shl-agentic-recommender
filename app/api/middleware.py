@@ -18,19 +18,25 @@ def register_middlewares(app: FastAPI) -> None:
     Args:
         app: FastAPI application instance.
     """
-    # 1. CORS middleware
+    # 1. CORS middleware - Production ready with configurable origins
+    import os
+    allowed_origins = os.getenv("ALLOWED_ORIGINS", "*").split(",")
+    
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],
+        allow_origins=allowed_origins if "*" not in allowed_origins else ["*"],
         allow_credentials=True,
-        allow_methods=["*"],
+        allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
         allow_headers=["*"],
+        expose_headers=["x-correlation-id", "x-response-time-ms"],
+        max_age=3600,
     )
 
-    # 2. Trusted Host middleware
+    # 2. Trusted Host middleware - Production security
+    allowed_hosts = os.getenv("ALLOWED_HOSTS", "*").split(",")
     app.add_middleware(
         TrustedHostMiddleware,
-        allowed_hosts=["*"],  # Restrict in production setting
+        allowed_hosts=allowed_hosts if "*" not in allowed_hosts else ["*"],
     )
 
     # 3. HTTP middleware for request ID correlation and performance timing
