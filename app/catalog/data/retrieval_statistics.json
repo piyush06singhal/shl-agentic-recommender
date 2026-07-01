@@ -1,0 +1,12 @@
+{
+  "total_queries": 0,
+  "cache_hits": 0,
+  "cache_misses": 0,
+  "average_latency_ms": 0.0,
+  "average_candidates_returned": 0.0,
+  "average_semantic_score": 0.0,
+  "top_searched_skills": [],
+  "top_searched_job_families": [],
+  "metadata_filter_usage_rate": 0.0,
+  "generation_timestamp": "2026-07-01T11:44:09.971321+00:00"
+}

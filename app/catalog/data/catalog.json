@@ -1,0 +1,181 @@
+[
+  {
+    "id": "256bce3e-e95c-5875-892a-320296334f61",
+    "name": "SHL OPQ32 Personality Assessment",
+    "url": "https://www.shl.com/en/assessments/personality/opq/",
+    "test_type": "Personality",
+    "description": "The Occupational Personality Questionnaire (OPQ32) is a premier assessment measuring 32 key personality characteristics that influence job performance. Highly predictive of workplace behavior and fit.",
+    "job_family": [
+      "Technology",
+      "Sales",
+      "Management",
+      "Finance"
+    ],
+    "target_level": [
+      "Professional",
+      "Leadership"
+    ],
+    "duration_mins": 25,
+    "languages": [
+      "English",
+      "French",
+      "German",
+      "Spanish",
+      "Japanese"
+    ],
+    "skills": [
+      "Behavioral Fit",
+      "Workplace Styles",
+      "Leadership Potential"
+    ],
+    "competencies": [
+      "Working with People",
+      "Leading",
+      "Deciding",
+      "Adapting",
+      "Coping"
+    ],
+    "remote_testing": true,
+    "adaptive": false,
+    "category": "Personality Profile"
+  },
+  {
+    "id": "5b6a1d39-d390-50d7-ad38-b91bd330a9ff",
+    "name": "SHL Cognitive Ability Test (Verify)",
+    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify/",
+    "test_type": "Cognitive",
+    "description": "A suite of cognitive capability audits testing critical numerical, verbal, and inductive reasoning competencies. Essential for predicting task performance across complex role profiles.",
+    "job_family": [
+      "Technology",
+      "Finance",
+      "Administration"
+    ],
+    "target_level": [
+      "Graduate/Entry",
+      "Professional"
+    ],
+    "duration_mins": 18,
+    "languages": [
+      "English",
+      "German",
+      "Spanish",
+      "Chinese"
+    ],
+    "skills": [
+      "Numerical Analysis",
+      "Logical Thinking",
+      "Inductive Reasoning",
+      "Verbal Reasoning"
+    ],
+    "competencies": [
+      "Analyzing",
+      "Formulating Concepts",
+      "Problem Solving"
+    ],
+    "remote_testing": true,
+    "adaptive": true,
+    "category": "Cognitive Test"
+  },
+  {
+    "id": "1cc70410-abd8-5592-bce7-edacab2a3c5b",
+    "name": "SHL Java Developer Skills Test",
+    "url": "https://www.shl.com/en/assessments/skills/java-developer/",
+    "test_type": "Skills",
+    "description": "An interactive coding assessment specifically designed for screening software engineers on Java core fundamentals, multi-threading, database mappings, and memory management efficiency.",
+    "job_family": [
+      "Technology"
+    ],
+    "target_level": [
+      "Professional"
+    ],
+    "duration_mins": 30,
+    "languages": [
+      "English"
+    ],
+    "skills": [
+      "Java Code Design",
+      "OOP Principles",
+      "Algorithmic Analysis",
+      "Debugging"
+    ],
+    "competencies": [
+      "Writing",
+      "Reporting",
+      "Applying Expertise",
+      "Technology"
+    ],
+    "remote_testing": true,
+    "adaptive": false,
+    "category": "Technical Skills"
+  },
+  {
+    "id": "fdb31889-0f1a-5bbc-a56a-dc558da2f463",
+    "name": "SHL English Language Communication Test",
+    "url": "https://www.shl.com/en/assessments/language/english-communication/",
+    "test_type": "Language",
+    "description": "Audits professional spoken, written, and reading English communication capacities. Identifies capability fit for customer support, service delivery, or international coordination roles.",
+    "job_family": [
+      "Administration",
+      "Sales"
+    ],
+    "target_level": [
+      "Graduate/Entry",
+      "Professional"
+    ],
+    "duration_mins": 15,
+    "languages": [
+      "English"
+    ],
+    "skills": [
+      "Vocabulary",
+      "Spoken Intonation",
+      "Grammar Accuracy",
+      "Listening Comprehension"
+    ],
+    "competencies": [
+      "Presenting",
+      "Communicating Information",
+      "Relating",
+      "Networking"
+    ],
+    "remote_testing": true,
+    "adaptive": true,
+    "category": "Language Proficiency"
+  },
+  {
+    "id": "a3317d75-9bde-5731-b4ca-abb9d427a0ac",
+    "name": "SHL Graduate General Ability Test",
+    "url": "https://www.shl.com/en/assessments/cognitive/general-ability/",
+    "test_type": "Cognitive",
+    "description": "Audits general reasoning, critical logical inference, and numerical processing for entry level graduates. Excellent for screening general talent in early career pipelines.",
+    "job_family": [
+      "Technology",
+      "Sales",
+      "Administration",
+      "Finance",
+      "Management"
+    ],
+    "target_level": [
+      "Graduate/Entry"
+    ],
+    "duration_mins": 30,
+    "languages": [
+      "English",
+      "French",
+      "German"
+    ],
+    "skills": [
+      "Logical Aptitude",
+      "Data Inferences",
+      "Problem Solving"
+    ],
+    "competencies": [
+      "Analyzing",
+      "Formulating Concepts",
+      "Learning Capacity"
+    ],
+    "remote_testing": true,
+    "adaptive": true,
+    "category": "Cognitive Test"
+  }
+]

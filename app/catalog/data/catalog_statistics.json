@@ -1,0 +1,33 @@
+{
+  "catalog_version": "1.0.0",
+  "generation_timestamp": "2026-07-01T06:34:01.542682+00:00",
+  "total_assessments": 5,
+  "average_duration_mins": 23.6,
+  "distribution_by_test_type": {
+    "Personality": 1,
+    "Cognitive": 2,
+    "Skills": 1,
+    "Language": 1
+  },
+  "distribution_by_job_family": {
+    "Technology": 4,
+    "Sales": 3,
+    "Management": 2,
+    "Finance": 3,
+    "Administration": 3
+  },
+  "unique_languages_count": 6,
+  "distribution_by_language": {
+    "English": 5,
+    "French": 2,
+    "German": 3,
+    "Spanish": 2,
+    "Japanese": 1,
+    "Chinese": 1
+  },
+  "pipeline_metrics": {
+    "duplicates_removed_count": 0,
+    "validation_failures_count": 0,
+    "missing_optional_fields_count": 0
+  }
+}

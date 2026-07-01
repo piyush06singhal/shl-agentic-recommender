@@ -1,0 +1,11 @@
+{
+  "total_vectors": 5,
+  "embedding_model": "text-embedding-3-small",
+  "embedding_dimensions": 1536,
+  "collection_name": "shl_assessments",
+  "generation_timestamp": "2026-07-01T06:51:56.855034+00:00",
+  "average_document_length": 532.2,
+  "failed_embeddings": 0,
+  "skipped_embeddings": 5,
+  "updated_embeddings": 0
+}
