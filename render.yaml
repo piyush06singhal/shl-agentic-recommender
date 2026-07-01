@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: shl-recommender
+    env: docker
+    dockerfilePath: Dockerfile
+    dockerContext: .
+    plan: starter
+    startCommand: python scripts/run.py
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: HOST
+        value: 0.0.0.0
+      - key: OPENAI_API_KEY
+        sync: false # Set in Render UI dashboard
+      - key: MODEL_NAME
+        value: gpt-4o
+      - key: EMBEDDING_MODEL
+        value: text-embedding-3-small
+      - key: LOG_LEVEL
+        value: INFO
+      - key: API_TIMEOUT
+        value: 25.0
